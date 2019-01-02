@@ -49,11 +49,7 @@ tdm
 term.freq <- rowSums(as.matrix(tdm)) 
 term.freq <- subset(term.freq, term.freq >= 80) 
 term.freq
-#v <- sort(rowSums(m),decreasing=TRUE)
-#d <- data.frame(word = names(v),freq=v)
-#d
 
-#head(d, 10)
 df <- data.frame(term = names(term.freq), freq = term.freq)
 df
 
